@@ -1,0 +1,132 @@
+.bitcoinlogo {
+  width: 35px;
+  height: auto;
+  font-size: 0.78571429rem;
+  margin-right: 0.5em;
+  margin-left: 0;
+  display: inline-block;
+}
+li {
+  list-style-type: none;
+}
+.tablemain {
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  margin: 0 -1px;
+  width: calc(100% + 2px);
+  max-width: calc(100% + 2px);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #d4d4d5;
+  background: rgb(236, 239, 241);
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  margin: 1rem 0;
+  padding: 1em;
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  font-size: 1rem;
+  padding: 1.5em;
+}
+.tablesub {
+  margin-top: -10em;
+  display: block;
+  max-width: 100% !important;
+  display: block;
+  max-width: 100% !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .tablesub {
+    width: 1127px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+.selectable {
+  width: 100%;
+  background: #fff;
+  margin: 5em 0;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0.28571429rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.tablehead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.centeraligned {
+  text-align: center;
+  cursor: pointer;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.rank {
+  border-radius: 0.28571429rem 0 0 0;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.95);
+  user-select: none;
+  padding: 10px;
+}
+th {
+  cursor: pointer;
+  white-space: nowrap;
+  border-left: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+}
+.leftaligned {
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.rightaligned {
+  text-align: right;
+}
+.tablebody {
+  background: rgb(255, 255, 255);
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.bitcoinlogo {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  background-color: transparent;
+  vertical-align: middle;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0.5em;
+  height: auto;
+
+  font-size: 0.78571429rem;
+}
+.ellipsis {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+a {
+  color: black;
+}
