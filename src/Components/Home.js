@@ -13,7 +13,7 @@ export const Home = () => {
       <header className="site-navbar site-navbar-target bg-white" role="banner">
         <div className="container">
           <div className="row align-items-center position-relative">
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <nav
                 className="site-navigation text-right ml-auto "
                 role="navigation"

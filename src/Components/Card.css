@@ -109,7 +109,7 @@ th {
   vertical-align: middle;
   border-color: inherit;
 }
-.bitcoinlogo {
+.bitcoinlogo img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -129,4 +129,15 @@ th {
 }
 a {
   color: black;
+}
+.btnload{
+  align-items: center;
+  position: absolute;
+  left: 50%;
+ margin-top: 20px;
+ padding: 10px;
+ font-size: 15px;
+ background-color:  #89ba16 !important;
+ color: #fff;
+ border-radius: 20px;
 }

@@ -1,6 +1,5 @@
 import React ,{useEffect,useState}from 'react'
 import './Card.css'
-
 const Card = () => {
    
     const formatPercent = number => 
@@ -16,8 +15,6 @@ const Card = () => {
       })
       .format(number);
 
-
-     
     const divstyle={
         display: "inline-block", 
         verticalAlign: "middle"
@@ -28,8 +25,9 @@ const Card = () => {
          opacity: "0.7"
     }
     const[user,setUser]= useState([]);
+    const [limit,setLimit]=useState(50);
     useEffect(()=>{
-        fetch("https://api.coincap.io/v2/assets")
+        fetch(`https://api.coincap.io/v2/assets`)
         .then((result)=>{
             result.json().then((res)=>{
                 setUser(res.data)
@@ -38,17 +36,15 @@ const Card = () => {
     },[])
     console.log(user)
    
-    const image= (user)=>
-        `${(user.symbol).toLowerCase}`
-   const url=()=>
-   
-    `${`https://assets.coincap.io/assets/icons/${image}@2x.png`}`
-
+    const submithandler=()=>{
+        setLimit(limit+limit)
+    }
+ 
+    const slice=user.slice(0,limit)
 
   return (
+    
     <div>
-
-       
         <div className='tablemain'>
                         <div className='tablesub'>
                          <table className="selectable">
@@ -66,14 +62,17 @@ const Card = () => {
                 </thead>
                 
                 <tbody className="tablebody">
-                
-                  {user.map((item)=>(
-                    <>
-                   
+                 
+                  
+                  {slice.map((item)=>(
+                   <>
+                  
+       
                      <tr className="rightaligned ">
                 <td className="centeraligned">{item.rank}</td>
                 <td colSpan="2" className="leftaligned">
-                <img src={url} className="bitcoinlogo " alt='logo'/>
+                <img src={`https://assets.coincap.io/assets/icons/${item.symbol.toLowerCase()}@2x.png`} className="bitcoinlogo " alt='logo'/>
+                     
                 <div className="ellipsis" style={divstyle}>
                 <a href="#">{item.name}
                 <p style={pstyle}>{item.symbol}</p>
@@ -107,11 +106,12 @@ const Card = () => {
                     </span>
                 </td>
                 </tr>
-                    </>
-                  ))}
-               
+                </>
+                 ))}
+                 <button onClick={()=>submithandler()} className='btnload'>load more</button>
 
                 </tbody>
+                
                 </table>
                 </div>
                 </div>
